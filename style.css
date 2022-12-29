@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,300;1,400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+
+.calculator {
+    width: 255px;
+    background: rgba(244, 245, 246, 0.686);
+    height: 510px;
+    border-radius: 25px;
+    box-shadow: 18px 15px 20px 10px #ddd, 0px 0px 20px 20px rgb(247, 243, 243);
+    ;
+}
+
+.cal_main {
+    margin-left: 40%;
+    margin-top: 10%;
+    height: 1000px;
+}
+
+.cal_header {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 35px;
+}
+
+.cal_header input {
+    width: 70px;
+    border-radius: 15px;
+    margin-left: 15px;
+    font-size: 11px;
+    text-align: center;
+    padding: 4px 0px 4px 2px;
+}
+
+.inputOne input {
+    background: #fff;
+    border: none;
+    color: rgb(132, 122, 122);
+    box-shadow: 1px 1px 5px 3px #ddd;
+}
+
+.inputTwo input {
+    background: #fff;
+    border: none;
+    box-shadow: inset 3px 1px 10px rgb(0 0 0 / 20%);
+    color: rgb(132, 122, 122);
+}
+
+#cal_secondsec {
+    width: 220px;
+    height: 130px;
+    margin: auto;
+    background: rgb(249, 247, 247);
+    box-shadow: inset 3px 1px 10px rgb(0 0 0 /20%);
+    border-radius: 6px;
+    text-align: right;
+    margin-top: 20px;
+}
+
+#cal_secondsec p,
+h4 {
+    padding-top: 30px;
+    padding-right: 10px;
+}
+
+#text_sec {
+    padding-top: 60px;
+    padding-right: 15px;
+}
+
+#labels {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    color: rgb(187, 179, 179);
+    font-size: 15px;
+}
+
+#answer {
+    font-weight: bold;
+}
+
+.button_lineOne {
+    margin-top: 20px;
+    margin-left: 6px;
+}
+
+.button_lineOne button {
+    padding: 12px 15px;
+    border-radius: 10px;
+    background: black;
+    color: #fff;
+    margin-left: 8px;
+}
+
+.button_linetwo {
+    margin-top: 10px;
+    margin-left: 6px;
+}
+
+.button_linetwo button {
+    padding: 14px 19px;
+    border-radius: 9px;
+    background: rgb(241, 238, 238);
+    color: black;
+    margin-left: 9px;
+    border: none;
+    box-shadow: 1px 1px 8px 4px #ddd;
+}
+
+.into {
+    background: black !important;
+    color: #fff !important;
+}
+
+.button_linetre {
+    margin-top: 10px;
+    margin-left: 6px;
+}
+
+.button_linetre button {
+    padding: 14px 19px;
+    border-radius: 9px;
+    background: rgb(241, 238, 238);
+    color: black;
+    margin-left: 9px;
+    border: none;
+    box-shadow: 1px 1px 8px 4px #ddd;
+}
+
+.minus {
+    background: black !important;
+    color: #fff !important;
+}
+
+.button_linefour {
+    margin-top: 10px;
+    margin-left: 6px;
+}
+
+.button_linefour button {
+    padding: 14px 19px;
+    border-radius: 9px;
+    background: rgb(241, 238, 238);
+    color: black;
+    margin-left: 9px;
+    border: none;
+    box-shadow: 1px 1px 8px 4px #ddd;
+}
+
+.plus {
+    background: black !important;
+    color: #fff !important;
+}
+
+.button_linefive {
+    margin-top: 10px;
+    margin-left: 6px;
+}
+
+.button_linefive button {
+    padding: 14px 19px;
+    border-radius: 9px;
+    background: rgb(241, 238, 238);
+    color: black;
+    margin-left: 9px;
+    border: none;
+    box-shadow: 1px 1px 8px 4px #ddd;
+}
+
+.equal {
+    background: black !important;
+    color: #fff !important;
+}

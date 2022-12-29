@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Js basic calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="cal_main">
+        <div class="calculator">
+            <div class="cal_header">
+                <div class="inputOne">
+                    <input type="text" value="kalkulator">
+                </div>
+                <div class="inputTwo">
+                    <input type="text" value="Nilai Tukar">
+                </div>
+            </div>
+
+            <div id="cal_secondsec">
+                <div id="text_sec">
+                    <div id="labels">
+                        <label id="calOne" for="">1</label><br>
+                        <label id="calTwo" for="">X</label><br>
+                        <label id="calTre" for="">2</label><br>
+                    </div>
+                    <label id="answer" for="">result</label>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="button_lineOne">
+                    <button>C</button>
+                    <button><i class="fas fa-percent"></i></button>
+                    <button><i class="fas fa-backspace"></i></button>
+                    <button><i class="fas fa-divide"></i></button>
+                </div>
+                <div class="button_linetwo">
+                    <button>7</button>
+                    <button>8</i></button>
+                    <button>9</i></button>
+                    <button class="into"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="button_linetre">
+                    <button>4</button>
+                    <button>5</i></button>
+                    <button>6</i></button>
+                    <button class="minus"><i class="fas fa-minus"></i></button>
+                </div>
+
+                <div class="button_linefour">
+                    <button>1</button>
+                    <button>2</i></button>
+                    <button>3</i></button>
+                    <button class="plus"><i class="fas fa-plus"></i></button>
+                </div>
+                <div class="button_linefive">
+                    <button>00</button>
+                    <button>0</i></button>
+                    <button>.</i></button>
+                    <button class="equal"><i class="fas fa-equals"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/825d68f42c.js" crossorigin="anonymous"></script>
+    <script>
+        let numOne = 130;
+        let numTwo = 5
+        let result = numOne * numTwo;
+        document.getElementById("calOne").innerHTML = numOne;
+        document.getElementById("calTre").innerHTML = numTwo;
+        document.getElementById("answer").innerHTML = result;
+    </script>
+</body>
+
+</html>
