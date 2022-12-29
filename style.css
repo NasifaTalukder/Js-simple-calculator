@@ -11,8 +11,7 @@ body {
     background: rgba(244, 245, 246, 0.686);
     height: 510px;
     border-radius: 25px;
-    box-shadow: 18px 15px 20px 10px #ddd, 0px 0px 20px 20px rgb(247, 243, 243);
-    ;
+    box-shadow: 12px 15px 20px 10px #ddd, 0px 0px 20px 20px rgb(247, 243, 243);
 }
 
 .cal_main {
@@ -24,7 +23,7 @@ body {
 .cal_header {
     display: flex;
     flex-wrap: wrap;
-    padding-top: 35px;
+    padding-top: 35px;   
 }
 
 .cal_header input {
@@ -34,6 +33,7 @@ body {
     font-size: 11px;
     text-align: center;
     padding: 4px 0px 4px 2px;
+    outline: 0px;
 }
 
 .inputOne input {
