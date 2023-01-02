@@ -69,6 +69,7 @@
     </div>
     <script src="https://kit.fontawesome.com/825d68f42c.js" crossorigin="anonymous"></script>
     <script>
+        // ------number passing----
         let numOne = 130;
         let numTwo = 5
         let result = numOne * numTwo;
@@ -76,35 +77,118 @@
         document.getElementById("calTre").innerHTML = numTwo;
         document.getElementById("answer").innerHTML = result;
 
-
-        const StudentDetalis={
-            StudentOne:{
-              FirstName:"Swarna",
-              SecName:"Barua",
-              Department:"Computer",
-              Semester:"4th",
-              Group:"B1"
+        //  --------name passing-----
+        const StudentDetalis = {
+            StudentOne: {
+                FirstName: "Swarna",
+                SecName: "Barua",
+                Department: "Computer",
+                Semester: "4th",
+                Group: "B1"
             },
-            StudentTwo:{
-              FirstName:"Nasifa",
-              SecName:"Tldr",
-              Department:"Computer",
-              Semester:"4th",
-              Group:"A1"
+            StudentTwo: {
+                FirstName: "Nasifa",
+                SecName: "Tldr",
+                Department: "Computer",
+                Semester: "4th",
+                Group: "A1"
             },
-            StudentThree:{
-              FirstName:"Sanjida",
-              SecName:"Akter",
-              Department:"Computer",
-              Semester:"4th",
-              Group:"B1"
+            StudentThree: {
+                FirstName: "Sanjida",
+                SecName: "Akter",
+                Department: "Computer",
+                Semester: "4th",
+                Group: "B1"
             }
-            
+
         }
-        let StudentFirstName =StudentDetalis.StudentTwo.FirstName;
-        let StudentSecName =StudentDetalis.StudentTwo.SecName;
-        let FullName =StudentFirstName + ""+StudentSecName;
-        document.getElementById("MyName").innerHTML=FullName;
+        let StudentFirstName = StudentDetalis.StudentTwo.FirstName;
+        let StudentSecName = StudentDetalis.StudentTwo.SecName;
+        let FullName = StudentFirstName + "" + StudentSecName;
+        document.getElementById("MyName").innerHTML = FullName;
+
+    //    -------operator work using if else-----
+        let numberOne = 50;
+        let numberTwo = 30;
+        let operator = prompt("Enter a operator :", "");
+        let FirstNoCheck=0;
+        let SecNoCheck=0;
+        let sum =0;
+
+        if (operator === "+"){
+               FirstNoCheck = numberOne > 0 ? numberOne : 0;
+               SecNoCheck = numberTwo > 0 ? numberTwo : 0;
+            if (FirstNoCheck === "F"){
+               console.log("Invalid Number");
+              }
+               else if(SecNoCheck === "F"){
+                console.log("Invalid Number");
+             } else{
+                  sum = FirstNoCheck + SecNoCheck;
+                console.log(sum);
+              }
+
+        }
+        else if (operator === "-") {
+                FirstNoCheck = numberOne > 0 ? numberOne : 0;
+                SecNoCheck = numberTwo > 0 ? numberTwo : 0;
+            if (FirstNoCheck === "F"){
+               console.log("Invalid Number");
+              }
+               else if(SecNoCheck === "F"){
+                console.log("Invalid Number");
+             } else{
+                   sum = FirstNoCheck - SecNoCheck;
+                console.log(sum);
+              }
+
+        }
+        else if (operator === "*") {
+               FirstNoCheck = numberOne > 0 ? numberOne : 0;
+               SecNoCheck = numberTwo > 0 ? numberTwo : 0;
+            if (FirstNoCheck === "F"){
+               console.log("Invalid Number");
+              }
+               else if(SecNoCheck === "F"){
+                console.log("Invalid Number");
+             } else{
+               sum = FirstNoCheck * SecNoCheck;
+                console.log(sum);
+              }
+
+        }
+        else if (operator === "/") {
+               FirstNoCheck = numberOne > 0 ? numberOne : 0;
+               SecNoCheck = numberTwo > 0 ? numberTwo : 0;
+            if (FirstNoCheck === "F"){
+               console.log("Invalid Number");
+              }
+               else if(SecNoCheck === "F"){
+                console.log("Invalid Number");
+             } else{
+                  sum = FirstNoCheck / SecNoCheck;
+                console.log(sum);
+              }
+
+        }
+        else{ (operator === "%") 
+               FirstNoCheck = numberOne > 0 ? numberOne : 0;
+               SecNoCheck = numberTwo > 0 ? numberTwo : 0;
+            if (FirstNoCheck === "F"){
+               console.log("Invalid Number");
+              }
+               else if(SecNoCheck === "F"){
+                console.log("Invalid Number");
+             } else{
+                 sum = FirstNoCheck % SecNoCheck;
+                console.log(sum);
+              }
+
+        }
+        document.getElementById("calOne").innerHTML=FirstNoCheck;
+        document.getElementById("calTre").innerHTML=SecNoCheck;
+        document.getElementById("calTwo").innerHTML=operator;
+        document.getElementById("answer").innerHTML=sum;
     </script>
 </body>
 
