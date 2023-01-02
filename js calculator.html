@@ -15,7 +15,8 @@
                     <input type="text" value="kalkulator">
                 </div>
                 <div class="inputTwo">
-                    <input type="text" value="Nilai Tukar">
+                    <label id="MyName">Nilai Tukar</label>
+                    <!-- <input id="myName"type="text" value="Nilai Tukar"> -->
                 </div>
             </div>
 
@@ -74,6 +75,36 @@
         document.getElementById("calOne").innerHTML = numOne;
         document.getElementById("calTre").innerHTML = numTwo;
         document.getElementById("answer").innerHTML = result;
+
+
+        const StudentDetalis={
+            StudentOne:{
+              FirstName:"Swarna",
+              SecName:"Barua",
+              Department:"Computer",
+              Semester:"4th",
+              Group:"B1"
+            },
+            StudentTwo:{
+              FirstName:"Nasifa",
+              SecName:"Tldr",
+              Department:"Computer",
+              Semester:"4th",
+              Group:"A1"
+            },
+            StudentThree:{
+              FirstName:"Sanjida",
+              SecName:"Akter",
+              Department:"Computer",
+              Semester:"4th",
+              Group:"B1"
+            }
+            
+        }
+        let StudentFirstName =StudentDetalis.StudentTwo.FirstName;
+        let StudentSecName =StudentDetalis.StudentTwo.SecName;
+        let FullName =StudentFirstName + ""+StudentSecName;
+        document.getElementById("MyName").innerHTML=FullName;
     </script>
 </body>
 
