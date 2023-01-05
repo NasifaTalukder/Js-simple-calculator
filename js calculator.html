@@ -27,7 +27,7 @@
                         <label id="calTwo" for="">X</label><br>
                         <label id="calTre" for="">2</label><br>
                     </div>
-                    <label id="answer" for="">result</label>
+                    <label id="answer">result</label>
                 </div>
             </div>
 
@@ -68,14 +68,15 @@
         </div>
     </div>
     <script src="https://kit.fontawesome.com/825d68f42c.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
     <script>
         // ------number passing----
-        let numOne = 130;
-        let numTwo = 5
-        let result = numOne * numTwo;
-        document.getElementById("calOne").innerHTML = numOne;
-        document.getElementById("calTre").innerHTML = numTwo;
-        document.getElementById("answer").innerHTML = result;
+        // let numOne = 130;
+        // let numTwo = 5
+        // let result = numOne * numTwo;
+        // document.getElementById("calOne").innerHTML = numOne;
+        // document.getElementById("calTre").innerHTML = numTwo;
+        // document.getElementById("answer").innerHTML = result;
 
         //  --------name passing-----
         const StudentDetalis = {
@@ -108,87 +109,126 @@
         document.getElementById("MyName").innerHTML = FullName;
 
     //    -------operator work using if else-----
-        let numberOne = 50;
-        let numberTwo = 30;
-        let operator = prompt("Enter a operator :", "");
-        let FirstNoCheck=0;
-        let SecNoCheck=0;
-        let sum =0;
+        // let numberOne = 50;
+        // let numberTwo = 30;
+        // let operator = prompt("Enter a operator :", "");
+        // let FirstNoCheck=0;
+        // let SecNoCheck=0;
+        // let sum =0;
 
-        if (operator === "+"){
-               FirstNoCheck = numberOne > 0 ? numberOne : 0;
-               SecNoCheck = numberTwo > 0 ? numberTwo : 0;
-            if (FirstNoCheck === "F"){
-               console.log("Invalid Number");
-              }
-               else if(SecNoCheck === "F"){
-                console.log("Invalid Number");
-             } else{
-                  sum = FirstNoCheck + SecNoCheck;
-                console.log(sum);
-              }
+        // if (operator === "+"){
+        //        FirstNoCheck = numberOne > 0 ? numberOne : 0;
+        //        SecNoCheck = numberTwo > 0 ? numberTwo : 0;
+        //     if (FirstNoCheck === "F"){
+        //        console.log("Invalid Number");
+        //       }
+        //        else if(SecNoCheck === "F"){
+        //         console.log("Invalid Number");
+        //      } else{
+        //           sum = FirstNoCheck + SecNoCheck;
+        //         console.log(sum);
+        //       }
 
+        // }
+        // else if (operator === "-") {
+        //         FirstNoCheck = numberOne > 0 ? numberOne : 0;
+        //         SecNoCheck = numberTwo > 0 ? numberTwo : 0;
+        //     if (FirstNoCheck === "F"){
+        //        console.log("Invalid Number");
+        //       }
+        //        else if(SecNoCheck === "F"){
+        //         console.log("Invalid Number");
+        //      } else{
+        //            sum = FirstNoCheck - SecNoCheck;
+        //         console.log(sum);
+        //       }
+
+        // }
+        // else if (operator === "*") {
+        //        FirstNoCheck = numberOne > 0 ? numberOne : 0;
+        //        SecNoCheck = numberTwo > 0 ? numberTwo : 0;
+        //     if (FirstNoCheck === "F"){
+        //        console.log("Invalid Number");
+        //       }
+        //        else if(SecNoCheck === "F"){
+        //         console.log("Invalid Number");
+        //      } else{
+        //        sum = FirstNoCheck * SecNoCheck;
+        //         console.log(sum);
+        //       }
+
+        // }
+        // else if (operator === "/") {
+        //        FirstNoCheck = numberOne > 0 ? numberOne : 0;
+        //        SecNoCheck = numberTwo > 0 ? numberTwo : 0;
+        //     if (FirstNoCheck === "F"){
+        //        console.log("Invalid Number");
+        //       }
+        //        else if(SecNoCheck === "F"){
+        //         console.log("Invalid Number");
+        //      } else{
+        //           sum = FirstNoCheck / SecNoCheck;
+        //         console.log(sum);
+        //       }
+
+        // }
+        // else{ (operator === "%") 
+        //        FirstNoCheck = numberOne > 0 ? numberOne : 0;
+        //        SecNoCheck = numberTwo > 0 ? numberTwo : 0;
+        //     if (FirstNoCheck === "F"){
+        //        console.log("Invalid Number");
+        //       }
+        //        else if(SecNoCheck === "F"){
+        //         console.log("Invalid Number");
+        //      } else{
+        //          sum = FirstNoCheck % SecNoCheck;
+        //         console.log(sum);
+        //       }
+
+        // }
+        // document.getElementById("calOne").innerHTML=FirstNoCheck;
+        // document.getElementById("calTre").innerHTML=SecNoCheck;
+        // document.getElementById("calTwo").innerHTML=operator;
+        // document.getElementById("answer").innerHTML=sum;
+
+    //    -------calculation using function-------
+
+    function calculation(num1,num2,){
+    let numberOne=num1;
+    let numberTwo=num2;
+    let Zero=0;
+    // let cal=ans;
+    let operator = prompt("Enter a operator :", "");
+    document.getElementById("calOne").innerHTML=numberOne;
+    document.getElementById("calTre").innerHTML=numberTwo;
+    document.getElementById("calTwo").innerHTML=operator;
+
+    if(operator=="+"){
+       answer = numberOne + numberTwo;
+       document.getElementById("answer").innerHTML=answer;         
+    }
+    else if(operator=="-"){
+       answer = numberOne - numberTwo;
+       document.getElementById("answer").innerHTML=answer;
+    }
+    else if(operator=="/"){
+       answer = numberOne / numberTwo;
+       document.getElementById("answer").innerHTML=answer;
+    }
+    else if(operator=="*"){
+       answer = numberOne * numberTwo;
+       document.getElementById("answer").innerHTML=answer;
+    }
+    else if (operator=="%"){
+       answer = numberOne % numberTwo;
+       document.getElementById("answer").innerHTML=answer;
+    }
+    else{
+        document.getElementById("answer").innerHTML="Error";
+    }
+       
         }
-        else if (operator === "-") {
-                FirstNoCheck = numberOne > 0 ? numberOne : 0;
-                SecNoCheck = numberTwo > 0 ? numberTwo : 0;
-            if (FirstNoCheck === "F"){
-               console.log("Invalid Number");
-              }
-               else if(SecNoCheck === "F"){
-                console.log("Invalid Number");
-             } else{
-                   sum = FirstNoCheck - SecNoCheck;
-                console.log(sum);
-              }
-
-        }
-        else if (operator === "*") {
-               FirstNoCheck = numberOne > 0 ? numberOne : 0;
-               SecNoCheck = numberTwo > 0 ? numberTwo : 0;
-            if (FirstNoCheck === "F"){
-               console.log("Invalid Number");
-              }
-               else if(SecNoCheck === "F"){
-                console.log("Invalid Number");
-             } else{
-               sum = FirstNoCheck * SecNoCheck;
-                console.log(sum);
-              }
-
-        }
-        else if (operator === "/") {
-               FirstNoCheck = numberOne > 0 ? numberOne : 0;
-               SecNoCheck = numberTwo > 0 ? numberTwo : 0;
-            if (FirstNoCheck === "F"){
-               console.log("Invalid Number");
-              }
-               else if(SecNoCheck === "F"){
-                console.log("Invalid Number");
-             } else{
-                  sum = FirstNoCheck / SecNoCheck;
-                console.log(sum);
-              }
-
-        }
-        else{ (operator === "%") 
-               FirstNoCheck = numberOne > 0 ? numberOne : 0;
-               SecNoCheck = numberTwo > 0 ? numberTwo : 0;
-            if (FirstNoCheck === "F"){
-               console.log("Invalid Number");
-              }
-               else if(SecNoCheck === "F"){
-                console.log("Invalid Number");
-             } else{
-                 sum = FirstNoCheck % SecNoCheck;
-                console.log(sum);
-              }
-
-        }
-        document.getElementById("calOne").innerHTML=FirstNoCheck;
-        document.getElementById("calTre").innerHTML=SecNoCheck;
-        document.getElementById("calTwo").innerHTML=operator;
-        document.getElementById("answer").innerHTML=sum;
+    calculation(60,20);
     </script>
 </body>
 
